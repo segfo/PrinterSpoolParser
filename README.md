@@ -10,3 +10,6 @@ PrinterSpoolParse/EMFSpool.dll
 
 # 使い方
 PrinterSpoolParse.exe
+
+# Special Thanks
+https://github.com/mlmdflr/EMFSpool
