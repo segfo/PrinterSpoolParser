@@ -6,7 +6,7 @@ Windowsスプールファイル(.spl)をpng画像にエクスポートするツ�
 
 # ビルドの方法
 参照に、以下のDLLを追加してください。  
-PrinterSpoolParse/EMFSpool.dll
+`PrinterSpoolParse/EMFSpool.dll`
 
 # 使い方
 `\PrinterSpoolParser.exe spl=FP00002.spl OutFile=FP00002`  
