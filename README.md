@@ -1,5 +1,5 @@
 # なにこれ？
-Windowsスプールファイル(.spl)をpng画像にエクスポートするツールです。
+Windowsのプリンタスプールファイル(.spl)をpng画像にエクスポートするツールです。
 
 # ダウンロード（推奨）
 [リリースページ](https://github.com/segfo/PrinterSpoolParser/releases)からダウンロードしてください。
