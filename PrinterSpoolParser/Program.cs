@@ -15,7 +15,7 @@ namespace PrinterSpoolParseW
         {
             var argsDict = args.Select(arg => arg.Split('=')).Where(s => s.Length == 2).ToDictionary(v => v[0], v => v[1]);
             var spool = argsDict.TryGetValue("spl",out var spl)? spl : "FP00000.SPL";
-            var output = argsDict.TryGetValue("OutputFile", out var opval) ? opval : "out";
+            var output = argsDict.TryGetValue("OutFile", out var opval) ? opval : "out";
 
             FileStream spoolFileStream = new FileStream(spool, FileMode.Open, FileAccess.Read);
             BinaryReader spoolReader = new BinaryReader(spoolFileStream, Encoding.Unicode);
