@@ -20,8 +20,11 @@ namespace PrinterSpoolParseW
             FileStream spoolFileStream = new FileStream(spool, FileMode.Open, FileAccess.Read);
             BinaryReader spoolReader = new BinaryReader(spoolFileStream, Encoding.Unicode);
             EMFSpoolFile spoolFile = new EMFSpoolFile(spoolReader);
-            spoolFile.Pages[0].PageImage.Save(output+".png");
-            spoolFile.Pages[0].Thumbnail.Save(output+"_Thumbnail.png");
+            int pageNumber = 1;
+            foreach (EMFPage page in spoolFile.Pages) {
+                page.PageImage.Save(output + "_page"+pageNumber+".png");
+                page.Thumbnail.Save(output + "_page" + pageNumber + "_Thumbnail.png");
+            }
         }
     }
 }
